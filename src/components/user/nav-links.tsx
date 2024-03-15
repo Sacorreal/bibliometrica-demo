@@ -6,11 +6,11 @@ import { usePathname } from "next/navigation";
 const links = [
   { name: "Home", href: "/user", icon: Home },
   {
-    name: "Asesoría",
+    name: "Asesorías",
     href: "/",
     icon: Users,
   },
-  { name: "Calendario", href: "/", icon: CalendarDays },
+  { name: "Eventos", href: "/", icon: CalendarDays },
 ];
 
 export default function NavLinks() {
