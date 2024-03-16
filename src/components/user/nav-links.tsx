@@ -1,16 +1,24 @@
 "use client";
-import { CalendarDays, Home, Users } from "lucide-react";
+import {
+  BriefcaseBusiness,
+  CalendarDays,
+  FileClock,
+  Home,
+  Star,
+} from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
   { name: "Home", href: "/user", icon: Home },
   {
-    name: "Asesorías",
+    name: "Historial",
     href: "/",
-    icon: Users,
+    icon: FileClock,
   },
   { name: "Eventos", href: "/", icon: CalendarDays },
+  { name: "Servicios", href: "/user/servicios", icon: BriefcaseBusiness },
+  { name: "Califica", href: "/user", icon: Star },
 ];
 
 export default function NavLinks() {
