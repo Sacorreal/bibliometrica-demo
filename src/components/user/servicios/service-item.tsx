@@ -20,6 +20,7 @@ export default function ServiceItem() {
               <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
                 ¿Quieres ir más allá en la búsqueda? Con esta formación tendrás
                 la capacidad de buscar información de forma sistemática.
+                <hr />
                 <strong>Objetivos de aprendizaje: </strong>Identificar el
                 proceso de búsqueda de información Desarrollar estrategias para
                 recuperar información Buscar información en los recursos

@@ -18,7 +18,7 @@ const links = [
   },
   { name: "Eventos", href: "/", icon: CalendarDays },
   { name: "Servicios", href: "/user/servicios", icon: BriefcaseBusiness },
-  { name: "Califica", href: "/user", icon: Star },
+  { name: "Califica", href: "/user/califica", icon: Star },
 ];
 
 export default function NavLinks() {

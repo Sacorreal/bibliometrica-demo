@@ -11,8 +11,8 @@ export default function Home() {
               Conectamos a las bibliotecas con sus usuarios
             </h1>
             <p className="mt-4 text-xl text-gray-500">
-              Brinda una experiencia personalizada para cada usuario, escoje tu
-              perfil:
+              Brinda u na experiencia personalizada para cada usuario, escoje tu
+              perfil para ver el demo:
             </p>
           </div>
           <div>
