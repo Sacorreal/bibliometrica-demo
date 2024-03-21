@@ -1,39 +1,31 @@
+import Link from "next/link";
+
 export default function Librarian() {
   return (
-    <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
-      <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-80">
+    <div className="w-full max-w-sm bg-slate-200 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="flex flex-col items-center pb-5">
         <img
-          src="https://docs.material-tailwind.com/img/team-3.jpg"
-          alt="profile-picture"
+          className="w-24 h-24 mb-3 mt-3 rounded-full shadow-lg"
+          src="/librarian.jpg"
+          alt="Bibliotecologo"
         />
-      </div>
-      <div className="p-6 text-center">
-        <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-          Natalie Paisley
-        </h4>
-        <p className="block font-sans text-base antialiased font-medium leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-gray-600 to-blue-gray-400">
-          CEO / Co-Founder
-        </p>
-      </div>
-      <div className="flex justify-center p-6 pt-2 gap-7">
-        <a
-          href="#facebook"
-          className="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400"
-        >
-          <i className="fab fa-facebook" aria-hidden="true" />
-        </a>
-        <a
-          href="#twitter"
-          className="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-light-blue-600 to-light-blue-400"
-        >
-          <i className="fab fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a
-          href="#instagram"
-          className="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-purple-600 to-purple-400"
-        >
-          <i className="fab fa-instagram" aria-hidden="true"></i>
-        </a>
+        <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+          Luis Perez
+        </h5>
+        <span className="text-sm text-gray-500 dark:text-gray-400">
+          Bibliotecologo Especializado
+        </span>
+        <span className="text-sm text-gray-500 dark:text-gray-400">
+          perez@biblioteca.edu.co
+        </span>
+        <div className="flex mt-4 md:mt-6">
+          <Link
+            href="/user"
+            className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Agendar asesoria
+          </Link>
+        </div>
       </div>
     </div>
   );
