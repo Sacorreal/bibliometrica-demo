@@ -13,10 +13,10 @@ const links = [
   { name: "Home", href: "/user", icon: Home },
   {
     name: "Historial",
-    href: "/",
+    href: "/user/historial",
     icon: FileClock,
   },
-  { name: "Eventos", href: "/", icon: CalendarDays },
+  { name: "Eventos", href: "/user/eventos", icon: CalendarDays },
   { name: "Servicios", href: "/user/servicios", icon: BriefcaseBusiness },
   { name: "Califica", href: "/user/califica", icon: Star },
 ];
