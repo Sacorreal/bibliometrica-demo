@@ -1,6 +1,9 @@
-import Image from "next/image";
+"use client";
 
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import ListDb from "@/components/ui/ListDb";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 export interface DataBases {
   title: string;
@@ -14,11 +17,7 @@ export const listDb: DataBases[] = [
     cover: "/AMA.png",
     id: "1",
   },
-  {
-    title: "Medicina Latina",
-    cover: "/medicLatina.png",
-    id: "2",
-  },
+
   {
     title: "Chorane",
     cover: "/chorane.png",
@@ -37,28 +36,23 @@ export const listDb: DataBases[] = [
 ];
 
 export function SuggestedDb() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
   return (
-    //top 10 de las bases de datos recomendadas
-    <ScrollArea className="w-96 whitespace-nowrap rounded-md border">
-      <div className="flex w-max space-x-4 p-4">
+    <main className="slider-container">
+      <Slider {...settings}>
         {listDb.map((db) => (
-          <figure key={db.id} className="shrink-0">
-            <div className="overflow-hidden rounded-md">
-              <Image
-                src={db.cover}
-                alt={db.title}
-                className="aspect-[3/4] h-fit w-fit object-cover"
-                width={300}
-                height={400}
-              />
-            </div>
-            <figcaption className="pt-2 text-xs text-muted-foreground">
-              <span className="font-semibold text-foreground">{db.title}</span>
-            </figcaption>
-          </figure>
+          <ListDb key={db.id} db={db} />
         ))}
-      </div>
-      <ScrollBar orientation="horizontal" />
-    </ScrollArea>
+      </Slider>
+    </main>
   );
 }

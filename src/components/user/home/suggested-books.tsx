@@ -12,22 +12,22 @@ export const listBooks = [
   },
   {
     title: "Músculos",
-    cover: "/medicinabolsillo.jpg",
+    cover: "/musculos.jpg",
     dewey: "618.T422l",
   },
   {
     title: "Infecciones Hospitalarias",
-    cover: "/medicinabolsillo.jpg",
+    cover: "/infecciones-Hospitalarias.jpg",
     dewey: "630.G466f",
   },
   {
-    title: "Diagnóstico por Imagen. Mama.",
-    cover: "/medicinabolsillo.jpg",
+    title: "Diagnóstico por Imagen",
+    cover: "/diagimagen.jpg",
     dewey: "699.01 I398p",
   },
   {
     title: "Ecocardiografía fetal",
-    cover: "/medicinabolsillo.jpg",
+    cover: "/ecofetal.jpg",
     dewey: "601.Z231q",
   },
 ];

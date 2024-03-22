@@ -1,15 +1,9 @@
 import Image from "next/image";
 
-type Books = {
-  title: string;
-  cover: string;
-  dewey: string;
-};
-
-export default function ListBooks(props: Books) {
-  const { title, cover, dewey } = props;
+export default function ListDb({ db }: any) {
+  const { cover, title } = db;
   return (
-    <div className="max-w-sm bg-white  dark:bg-gray-800 dark:border-gray-700 justify-items-center">
+    <div className="max-w-sm bg-white dark:bg-gray-800 dark:border-gray-700 justify-items-center">
       <div className="justify-items-center">
         <Image
           className="rounded-t-lg"
@@ -25,9 +19,6 @@ export default function ListBooks(props: Books) {
             {title}
           </h5>
         </div>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {dewey}
-        </p>
       </div>
     </div>
   );
