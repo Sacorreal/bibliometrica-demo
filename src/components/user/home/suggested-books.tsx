@@ -1,65 +1,60 @@
-import Image from "next/image";
+"use client";
+import ListBooks from "@/components/ui/ListBooks";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-
-export interface Books {
-  title: string;
-  cover: string;
-  dewey: string;
-}
-
-export const listBooks: Books[] = [
+export const listBooks = [
   {
     title: "Medicina de Bolsillo",
-    cover: "https://celsus.com.co/media/catalog/product//9/7/9788419284341.jpg",
+    cover: "/medicinabolsillo.jpg",
     dewey: "658.M234t",
   },
   {
     title: "Músculos",
-    cover: "https://celsus.com.co/media/catalog/product//9/7/9788419663344.jpg",
+    cover: "/medicinabolsillo.jpg",
     dewey: "618.T422l",
   },
   {
     title: "Infecciones Hospitalarias",
-    cover: "https://celsus.com.co/media/catalog/product//9/7/9788419663290.jpg",
+    cover: "/medicinabolsillo.jpg",
     dewey: "630.G466f",
   },
   {
     title: "Diagnóstico por Imagen. Mama.",
-    cover: "https://celsus.com.co/media/catalog/product//9/7/9788419663405.jpg",
+    cover: "/medicinabolsillo.jpg",
     dewey: "699.01 I398p",
   },
   {
     title: "Ecocardiografía fetal",
-    cover: "https://celsus.com.co/media/catalog/product//9/7/9788413825311.jpg",
+    cover: "/medicinabolsillo.jpg",
     dewey: "601.Z231q",
   },
 ];
 
 export function SuggestedBooks() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
   return (
-    <ScrollArea className="w-96 whitespace-nowrap rounded-md border">
-      <div className="flex w-max space-x-4 p-4">
+    <main className="slider-container">
+      <Slider {...settings}>
         {listBooks.map((book) => (
-          <figure key={book.dewey} className="shrink-0">
-            <div className="overflow-hidden rounded-md">
-              <Image
-                src={book.cover}
-                alt={book.title}
-                className="aspect-[3/4] h-fit w-fit object-cover"
-                width={300}
-                height={400}
-              />
-            </div>
-            <figcaption className="pt-2 text-xs text-muted-foreground">
-              <span className="font-semibold text-foreground">
-                {book.title} - {book.dewey}
-              </span>
-            </figcaption>
-          </figure>
+          <ListBooks
+            cover={book.cover}
+            title={book.title}
+            dewey={book.dewey}
+            key={book.dewey}
+          />
         ))}
-      </div>
-      <ScrollBar orientation="horizontal" />
-    </ScrollArea>
+      </Slider>
+    </main>
   );
 }

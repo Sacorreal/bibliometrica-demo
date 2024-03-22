@@ -5,10 +5,10 @@ import {
   FileClock,
   Home,
   Star,
+  Users,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 const links = [
   { name: "Home", href: "/user", icon: Home },
   {
@@ -19,6 +19,11 @@ const links = [
   { name: "Eventos", href: "/user/eventos", icon: CalendarDays },
   { name: "Servicios", href: "/user/servicios", icon: BriefcaseBusiness },
   { name: "Califica", href: "/user/califica", icon: Star },
+  {
+    name: "Asesoria Personalizada",
+    href: "/user/asesoria",
+    icon: Users,
+  },
 ];
 
 export default function NavLinks() {
