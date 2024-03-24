@@ -1,12 +1,12 @@
 export default function ServiceItem() {
   return (
     <>
-      <h1 className="text-3xl font-bold mb-6">
-        Búsqueda y recuperación de información
-      </h1>
       <div className="flex flex-row">
         <div>
-          <div className="relative flex flex-col mt-3 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-80 mx-2">
+          <h1 className="text-3xl font-bold mb-6 text-center">
+            Búsqueda y recuperación de información
+          </h1>
+          <div className="relative flex flex-col mt-3 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-80 mx-2 mb-3">
             <div className="relative  mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
               <iframe
                 width="400"
