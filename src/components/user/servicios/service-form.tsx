@@ -14,10 +14,16 @@ export default function ServicesForm() {
   };
 
   return (
-    <div className="flex flex-col justify-items-center max-w-sm mx-auto space-y-3">
-      <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
+    <div className="flex flex-col max-w-sm mx-auto space-y-3">
+      <form
+        className="space-y-3"
+        onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}
+      >
         <DateSelector />
-        <select className="mt-2" {...register("time", { required: true })}>
+        <select
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          {...register("time", { required: true })}
+        >
           <option value="">Selecciona la hora</option>
           <option value="8">8:00 am</option>
           <option value="9">9:00 am</option>
@@ -27,14 +33,22 @@ export default function ServicesForm() {
           <option value="16">4:00 pm</option>
         </select>
         <label className="block">¿Cuantas personas asisten?</label>
-        <input {...register("users")} type="number" />
+        <input
+          {...register("users")}
+          type="number"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        />
         <label className="block">Modalidad</label>
-        <select {...register("modalidad", { required: true })}>
+        <select
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          {...register("modalidad", { required: true })}
+        >
           <option value="virtual">Virtual</option>
           <option value="presencial">Presencial</option>
         </select>
         <label className="block">Comentarios:</label>
         <textarea
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
           {...register("aboutYou")}
           placeholder="¿Que más debemos saber?"
         />

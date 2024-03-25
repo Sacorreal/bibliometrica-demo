@@ -1,3 +1,5 @@
+import Librarian from "@/components/librarian-personal";
+
 export default function page() {
-  return <div>page de asesoria personalizada</div>;
+  return <Librarian />;
 }

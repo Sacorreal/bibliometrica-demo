@@ -5,8 +5,9 @@ export default function page() {
   return (
     <div className="flex">
       <ServiceItem />
-
-      <ServicesForm />
+      <div className="my-6 p-4 justify-start">
+        <ServicesForm />
+      </div>
     </div>
   );
 }
