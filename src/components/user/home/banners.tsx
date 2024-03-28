@@ -10,7 +10,7 @@ export default function Banners() {
         {/* Item 1 */}
         <div className="duration-700 ease-in-out" data-carousel-item="active">
           <img
-            src="/obtencion-documentos.jpg"
+            src="/banner-personalizado.png"
             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
           />

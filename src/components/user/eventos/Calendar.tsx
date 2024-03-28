@@ -15,6 +15,11 @@ export default function CalendarLibrary() {
       title: "Normas APA",
     },
     {
+      start: dayjs(Date.now()).toDate(),
+      end: dayjs(Date.now()).toDate(),
+      title: "Capacitacion",
+    },
+    {
       start: dayjs("2024-04-30T12:00:00").toDate(),
       end: dayjs("2024-04-30T13:00:00").toDate(),
       title: "Taller",
@@ -37,6 +42,17 @@ export default function CalendarLibrary() {
         events={events}
         startAccessor="start"
         endAccessor="end"
+        messages={{
+          next: "sig",
+          previous: "ant",
+          today: "Hoy",
+          month: "Mes",
+          week: "Semana",
+          day: "Día",
+          event: "Evento",
+          time: "Hora",
+          date: "Fecha",
+        }}
       />
     </div>
   );
