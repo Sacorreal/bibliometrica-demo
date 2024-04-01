@@ -16,6 +16,9 @@ export default function SelectFacultad() {
         <option value="fd">Facultad Derecho</option>
         <option value="di">Departamento Investigación</option>
         <option value="en">Escuela de Negocios</option>
+        <option selected value="ge">
+          General
+        </option>
       </select>
     </div>
   );
