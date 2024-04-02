@@ -1,5 +1,6 @@
 import NavLinks from "@/components/admin/navLinks-admin";
 import SideNav from "@/components/sidenav";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,7 +16,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <NavLinks />
         </SideNav>
       </div>
-      <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
+      <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
+        {children}
+        <Analytics />
+      </div>
     </div>
   );
 }
