@@ -2,7 +2,7 @@ export default function SatisServicio() {
   return (
     <>
       <div className="flex justify-between mb-1">
-        <span className="text-base font-medium text-blue-700 dark:text-white">
+        <span className="text-base font-medium  dark:text-white">
           Inducción biblioteca
         </span>
         <span className="text-sm font-medium text-blue-700 dark:text-white">
@@ -15,8 +15,8 @@ export default function SatisServicio() {
           style={{ width: "45%" }}
         />
       </div>
-      <div className="flex justify-between mb-1">
-        <span className="text-base font-medium text-blue-700 dark:text-white">
+      <div className="flex justify-between my-2 mb-1">
+        <span className="text-base font-medium dark:text-white">
           Préstamo libros
         </span>
         <span className="text-sm font-medium text-blue-700 dark:text-white">

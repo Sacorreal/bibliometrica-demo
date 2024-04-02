@@ -3,7 +3,7 @@ export default function SelectFacultad() {
     <div>
       <label
         htmlFor="small"
-        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        className="block mb-2 text-1xl mt-2 font-bold dark:text-white"
       >
         Unidad Académica
       </label>

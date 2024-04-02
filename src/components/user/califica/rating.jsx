@@ -1,3 +1,4 @@
+"use client";
 export default function RatingService() {
   return (
     <main className="flex items-center">

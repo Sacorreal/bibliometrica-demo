@@ -1,5 +1,4 @@
 import {
-  Card,
   Table,
   TableBody,
   TableCell,
@@ -34,7 +33,7 @@ const data = [
 
 export function ROI() {
   return (
-    <Card>
+    <div className="shadow-md p-2">
       <h3 className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold">
         Retorno de inversión recursos suscritos
       </h3>
@@ -70,6 +69,6 @@ export function ROI() {
           ))}
         </TableBody>
       </Table>
-    </Card>
+    </div>
   );
 }

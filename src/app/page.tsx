@@ -55,7 +55,7 @@ export default function Home() {
               </div>
 
               <Link
-                href="/admin"
+                href="/admin/dashboard/servicios"
                 className="inline-flex rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
               >
                 <PieChart className="mx-2" />

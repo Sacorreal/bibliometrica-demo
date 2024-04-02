@@ -1,5 +1,4 @@
 import {
-  Card,
   Table,
   TableBody,
   TableCell,
@@ -63,7 +62,7 @@ const data = [
 
 export function CoberturaTematica() {
   return (
-    <Card>
+    <div className="shadow-md p-2">
       <h3 className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold">
         Cobertura Temática
       </h3>
@@ -95,6 +94,6 @@ export function CoberturaTematica() {
           ))}
         </TableBody>
       </Table>
-    </Card>
+    </div>
   );
 }

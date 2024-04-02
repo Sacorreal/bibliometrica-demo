@@ -8,7 +8,7 @@ export default function EdadColeccion() {
     <LineChart
       width={900}
       height={300}
-      series={[{ data: pData, label: "libros" }]}
+      series={[{ data: pData }]}
       xAxis={[{ scaleType: "point", data: xLabels }]}
     />
   );

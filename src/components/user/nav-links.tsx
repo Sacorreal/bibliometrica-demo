@@ -27,7 +27,6 @@ const links = [
 ];
 
 export default function NavLinks() {
-  //apuntes: leer la ruta donde estamos si es igual, cambiar el color
   const pathname = usePathname();
   return (
     <>
