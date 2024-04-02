@@ -35,7 +35,7 @@ export default function WorkSpace() {
       <h1 className="text-3xl font-bold mb-6">Espacios de Trabajo</h1>
       <div className="flex flex-row">
         {listWorkSpace.map((service) => (
-          <div>
+          <div key={service.id}>
             <div className="relative flex flex-col mt-3 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-80 mx-2">
               <div className="relative  mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
                 <Image

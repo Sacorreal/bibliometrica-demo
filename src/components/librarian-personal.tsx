@@ -1,7 +1,8 @@
+import Image from "next/image";
 export default function Librarian() {
   return (
     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <img
+      <Image
         className="p-8 rounded-t-lg"
         src="/librarian.jpg"
         alt="bibliotecologo"

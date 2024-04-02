@@ -1,5 +1,6 @@
 "use client";
 import { BookOpenText, PieChart } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 export default function NavLinks() {
   return (
@@ -31,7 +32,7 @@ export default function NavLinks() {
                 </svg>
               </button>
               <Link href="/" className="flex ms-2 md:me-24">
-                <img src="/logo.png" className="h-8 me-3" alt="Logo" />
+                <Image src="/logo.png" className="h-8 me-3" alt="Logo" />
                 <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
                   Biblioteca
                 </span>
@@ -47,7 +48,7 @@ export default function NavLinks() {
                     data-dropdown-toggle="dropdown-user"
                   >
                     <span className="sr-only">Open user menu</span>
-                    <img
+                    <Image
                       className="w-8 h-8 rounded-full"
                       src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
                       alt="user photo"
