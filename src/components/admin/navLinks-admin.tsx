@@ -132,9 +132,11 @@ export default function NavLinks() {
                 data-collapse-toggle="dropdown-example"
               >
                 <PieChart />
-                <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
-                  Dashboard
-                </span>
+                <Link href="/admin/dashboard/servicios">
+                  <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
+                    Dashboard
+                  </span>
+                </Link>
                 <svg
                   className="w-3 h-3"
                   aria-hidden="true"
