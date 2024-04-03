@@ -1,5 +1,5 @@
 "use client";
-import { BookOpenText, PieChart } from "lucide-react";
+import { BookOpenText, BookUp2, PieChart, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 export default function NavLinks() {
@@ -178,6 +178,17 @@ export default function NavLinks() {
                 </li>
               </ul>
             </li>
+            <li>
+              <Link
+                href="/admin/dashboard/procesostec"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <BookUp2 />
+                <span className="flex-1 ms-3 whitespace-nowrap">
+                  Procesos Técnicos
+                </span>
+              </Link>
+            </li>
 
             <li>
               <Link
@@ -188,6 +199,15 @@ export default function NavLinks() {
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Colecciones
                 </span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/admin/dashboard/usuarios"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <Users />
+                <span className="flex-1 ms-3 whitespace-nowrap">Usuarios</span>
               </Link>
             </li>
           </ul>
